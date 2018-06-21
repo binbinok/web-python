@@ -11,3 +11,15 @@
     
     （提示：可能需要使用一个嵌套循环。）
 '''
+
+import time
+
+t = int(raw_input('Countdown timer: How many seconds?'))
+
+for i in range(t, 0, -1):
+    print i, 
+    for j in range(i):
+        print '*',
+    time.sleep(1)
+print "BLAST OFF!"
+
